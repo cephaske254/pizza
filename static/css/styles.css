@@ -1,0 +1,81 @@
+.bg-navy {
+    background: linear-gradient(-60deg, #041d8b8c, #bb8b0952,#580318b6);
+}
+.min-vh-80 {
+    min-height: 80vh;
+}
+.landing {
+    background: url("../images/background.jpg");
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+div#smallpizza img{
+    max-width: 80px;
+}
+div#mediumpizza img{
+    max-width: 90px;
+}
+div#largepizza img{
+    max-width: 100px;
+}
+
+#toppings div img {
+    max-width: 120px;
+    margin: auto;
+}
+
+#toppings div {
+    transition: .3s;
+}
+#toppings div:hover {
+    transition: .2s;
+    margin: -1% 0 1% 0;
+    background: rgba(255, 255, 255, 1);
+}
+
+.basket {
+    position: fixed;
+    top: 10%; right: 10px;
+    padding: 2px; border-radius: 50%;
+    width: 40px;
+    z-index: 1001;
+    animation: bounce 1s;
+    animation-iteration-count: infinite;
+    -webkit-animation: bounce 1s;
+    -webkit-animation-iteration-count: infinite;
+}
+.basket img {
+    width:100%
+}
+.outer-cont {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-self: center;
+}
+
+.choice.active {
+    display: flex;
+}
+.choice {
+    display: none;
+}
+@keyframes bounce{
+    0%, 100% {
+        margin: -1% 0 0 0;
+    }
+    50% {
+        margin: 0 0 0 0;
+    }
+}
+@-webkit-keyframes bounce {
+    0%, 100% {
+        margin: -1% 0 0 0;
+    }
+    50% {
+        margin: 0 0 0 0;
+    }
+     
+}

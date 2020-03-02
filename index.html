@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="static/css/bootstrap.css">
+    <link rel="stylesheet" href="static/css/styles.css">
+    <script src="static/js/jquery-3.4.1.js"></script>
+    <script src="static/js/bootstrap.js"></script>
+    <script src="static/js/script1.js"></script>
+    <script src="static/js/script.js"></script>
+    <title>BBI | Pizza Shop</title>
+</head>
+
+<body>
+    <div class="container-fluid min-vh-100 landing">
+        <nav class="navbar navbar-expand-lg fixed-top navbar-dark bg-navy border-bottom">
+            <a href="#" class="navbar-brand">BlaBlaBla</a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#mynav"
+                aria-controls="mynav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="mynav">
+                <ul class="navbar-nav">
+                    <li class="nav-item">
+                        <a href="#" class="nav-link">HOME</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#" class="nav-link">PLACE ORDER</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#" class="nav-link">CONTACT US</a>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+
+        <div class="row justify-content-center text-center flex-column text-black min-vh-100 align-items-center p-4">
+            <div class="jumbotron">
+                <h1>WELCOME TO BBI PIZZA SHOP</h1>
+                <h1 class="">The Choice Of Many</h1>
+            </div>
+            <button class="btn btn-outline-success p-2 m-2" onclick="window.location.href='#eertert'">
+                Place Order
+            </button>
+
+        </div>
+    </div>
+
+    <div class="container min-vh-80" id="eertert">
+        <form class="form-horizontal text-center flex-column align-items-center" id="orderform">
+            <h2>Order Your Pizza!</h2>
+            <div class="outer-cont">
+                <div class="row choice justify-content-center active" id="pizzasize">
+                    <h2 class="col-sm-12">Choose a pinch</h2>
+                    <div class="col-sm col-md-4 border" id="smallpizza">
+                        <img src="static/images/pizza.png" alt="">
+                        <p id="sm">Small</p>
+                    </div>
+                    <div class="col-sm col-md-4 border" id="mediumpizza">
+                        <img src="static/images/pizza.png" alt="">
+                        <p id="md">Medium</p>
+                    </div>
+                    <div class="col-sm col-md-4 border" id="largepizza">
+                        <img src="static/images/pizza.png" alt="">
+                        <p id="lg">Large</p>
+                    </div>
+                    <input type="text" class="form-control" name="pizzasizeinput" hidden>
+                </div>
+
+                <div class="row choice justify-content-center" id="pizzacrust">
+                    <h3 class="col-sm-12">Which Crust?</h3>
+                    <div class="col-sm-4 border p-5" id="cripsy">
+                        Cripsy
+                    </div>
+                    <div class="col-sm-4 border p-5" id="stuffed">
+                        Stuffed
+                    </div>
+                    <div class="col-sm-4 border p-5" id="gluttenFree">
+                        Glutten Free
+                    </div>
+                    <input type="text" class="form-control" name="pizzacrustinput" hidden>
+                </div>
+
+                <div class="row choice justify-content-center" id="toppings">
+                    <h3 class="col-sm-12">Which Toppings?</h3>
+                    <div class="col-sm-4 col-md-3 border" id="bacon">
+                        <img src="static/images/toppings/bacon.png" alt="">
+                        <p>Bacon</p>
+                    </div>
+                    <div class="col-sm-4 col-md-3 border" id="blackOlives">
+                        <img src="static/images/toppings/black_olives.png" alt="">
+                        <p>Black Olives</p>
+                    </div>
+                    <div class="col-sm-4 col-md-3 border" id="extraCheese">
+                        <img src="static/images/toppings/extra_cheese.png" alt="">
+                        <p>Extra Cheese</p>
+                    </div>
+                    <div class="col-sm-4 col-md-3 border" id="hamPineapple">
+                        <img src="static/images/toppings/ham&pineapple.png" alt="">
+                        <p>Ham & Pineapple</p>
+                    </div>
+                    <div class="col-sm-4 col-md-3 border" id="mushroom">
+                        <img src="static/images/toppings/mushroom.png" alt="">
+                        <p>Mushroom</p>
+                    </div>
+                    <div class="col-sm-4 col-md-3 border" id="onions">
+                        <img src="static/images/toppings/onions.png" alt="">
+                        <p>Onions</p>
+                    </div>
+                    <div class="col-sm-4 col-md-3 border" id="pepper">
+                        <img src="static/images/toppings/pepper.png" alt="">
+                        <p>Pepper</p>
+                    </div>
+                    <div class="col-sm-4 col-md-3 border" id="sausage">
+                        <img src="static/images/toppings/sausage.png" alt="">
+                        <p>Sausage</p>
+                    </div>
+                    <div class="col-sm-4 col-md-3 border" id="spinach">
+                        <img src="static/images/toppings/spinach.png" alt="">
+                        <p>Spinach</p>
+                    </div>
+                    <input type="text" name="pizzatoppinginput" hidden>
+                </div>
+
+                <div class="row choice justify-content-center" id="number-delivery">
+                    <h3 class="col-sm-12">How Many?</h3>
+                    <div class="col-sm-6 form-group">
+                        <label for="number">Enter a Number</label>
+                        <input type="number" min="1" class="form-control" name="noOfPizzas"
+                            placeholder="Number of pizzas">
+                    </div>
+                    <h3 class="col-sm-12">Do You Want It Delivered?</h3>
+                        <div class="form-group">
+                            <label class="border border-warning p-2 rounded">
+                                <input type="radio" value="yes" name="delivery" id="yes">Yes
+                                <input type="text" name="uname" class="form-control m-1" placeholder="Your Name">
+                                <input type="text" name="pbox" class="form-control m-1" placeholder="Your P.O. Box">
+                                <input type="text" name="ptown" class="form-control m-1" placeholder="Postal Town">
+                            </label><br>
+                            <label>
+                                <input type="radio" value="no" name="delivery" id="no"> No
+                            </label>
+                        </div>
+                        <input type="text" id="delivery" name="delivery" hidden>
+                </div>
+
+                <div class="row choice justify-content-center" id="checkout">
+                    <h3 class="col-sm-12">CheckOut!</h3>
+                    <h4 class="col-sm-12">Your Items</h4>
+                    <ol id="items" class="text-left">
+
+                    </ol>
+                </div>
+
+                <div class="row choice justify-content-center">
+                    <h1 class="col-sm-12" id="total">Make Payment Of: <span id="totalscreen"></span></h1>
+                    <button class="btn btn-success" id="confirm">Confirm Purchase</button>
+                </div>
+
+            </div>
+
+
+
+
+
+            <div class="form-group nextprev text-center m-2">
+                <input type="button" value="Previous" class="btn btn-outline-danger" id="previous">
+                <input type="button" value="Proceed" class="btn btn-outline-success" id="proceed">
+            </div>
+    </div>
+    </form>
+    </div>
+</body>
+
+</html>
