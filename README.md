@@ -26,7 +26,7 @@ Pizzaland Amazing. https://cephaske254.github.io/pizza
 | Behaviour      | Input        | Output       |
 | :------------- | :----------: | -----------: |
 |  Enter your name  |  cephas |     |
-| Enter your Email Address  |  fleeksolutions@gmail.com|   |
+| Enter your Email Address  |  cephaske254@gmail.com|   |
 | Enter your message or comment   |  I would love to work with you     |     |
 
 ## License
